@@ -1,0 +1,22 @@
+﻿@page
+@model CalcWeb.Pages.TipModel
+@{
+}
+
+<h1>Tip</h1>
+
+<div style="position:relative; left:400px;">
+    <p style="position:relative;"> @ViewData["errorm"] </p>
+    <form method="post">
+        Total:
+        <input style="width:120px" name="total" value="@Model.totalv"/>$
+        <br />
+        <div style="position:relative; top:4px;">
+            Tip Percentage:&nbsp;<input style="width:50px; position:relative;" name="percent" value="@Model.percentv" />%
+            <br />
+            Number of People:<input style="width:50px" name="people" value="@Model.peoplev"/>
+        </div>
+        <div style="position:relative; top:10px; left:55px"><input type="Submit" style="width: 120px; font-size:15px;" value="Calculate" /></div>
+    </form>
+    <p style="position:relative; top:25px;">Tip Amount: @ViewData["Tip"] </p>
+</div>

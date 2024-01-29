@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcWeb", "CalcWeb\CalcWeb.csproj", "{7A767B9C-5C6E-48AA-9D89-76EE24D74B21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A767B9C-5C6E-48AA-9D89-76EE24D74B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A767B9C-5C6E-48AA-9D89-76EE24D74B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A767B9C-5C6E-48AA-9D89-76EE24D74B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A767B9C-5C6E-48AA-9D89-76EE24D74B21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFE72DC5-AE5F-4C04-A3E8-70741F336788}
+	EndGlobalSection
+EndGlobal

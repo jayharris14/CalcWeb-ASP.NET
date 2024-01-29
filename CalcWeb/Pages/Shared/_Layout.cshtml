@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CalcWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CalcWeb.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a style="position:relative; right:30px" class="navbar-brand" asp-area="" asp-page="/Index">CalcWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="position:relative; left: 30px;"class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                            <a asp-page="/Index"><button class="home">Home</button></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Finance</button>
+                                <div class="dropdown-content">
+                                    <a asp-page="/Tip">Tip</a>
+                                    <a href="#">Sales Tax</a>
+                                    <a href="#">Budget</a>
+                                </div>
+                            </div>
+                        </li> 
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Personal</button>
+                                <div class="dropdown-content">
+                                    <a asp-page="/BMI">BMI</a>
+                                    <a href="#">Calorie Counter</a>
+                                </div>
+                             </div>
+                        </li>
+                    </ul>
+                </div>
+                <img style="position:relative; height:65px; width: 80px; right: 50px" src="https://i.ibb.co/qsvYKx6/calculatorimg.jpg">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - CalcWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿@page
+@model CalcWeb.Pages.BMIModel
+@{
+}
+
+<h1>BMI</h1>
+
+<form method="post">
+    <p style="position:relative;"> @ViewData["errorm"] </p>
+    Weight:<input style="width:120px" name="weight" value="@Model.weightv" />lbs.
+    <br />
+    <div style="position:relative; top:5px;">
+        Height:&nbsp;<input style="width:50px; position:relative;" name="feet" value="@Model.feetv" />ft.
+        <input style="width:50px" name="inches" value="@Model.inchesv" />in.
+    </div>
+    <div style="position:relative; top:10px; left:55px"><input type="Submit" style="width: 120px; font-size:15px;" value="Calculate" /></div>
+</form>
+<p style="position:relative; top:25px;">Your BMI: @ViewData["BMI"] </p>
+<div style="position: relative; top:-120px; left:700px">
+    <b>Body Mass Index Categories</b>
+    <div style="width: 219px; height: 35px; margin-bottom:0px; position:relative; background-color:mediumpurple"><p style="position:relative; top:6px; left:30px;">Underweight &lt 18.5</p></div>
+    <div style="width: 219px; height: 35px; margin-bottom:0px; position:relative;  background-color:violet"><p style="position:relative; top:6px; left:30px;">Healthy 18.5-24.9</p></div>
+    <div style="width: 219px; height: 35px; margin-bottom:0px; position:relative;  background-color:darkviolet"><p style="position:relative; top:6px; left:30px;">Overweight 25-29.9</p></div>
+    <div style="width: 219px; height: 35px; margin-bottom:0px; position:relative;  background-color:mediumpurple"><p style="position:relative; top:6px; left:30px;">Obesity 30-34.9</p></div>
+    <div style="width: 219px; height: 35px; margin-bottom:0px; position:relative;  background-color:violet"><p style="position:relative; top:6px; left:30px;">Severe Obesity 35 &gt </p></div>
+</div>
+
+
